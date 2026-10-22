@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEDD Curso Inicial - UTN FRSF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --utn-blue: #002B5B;
+            --utn-gold: #FFC107;
+            --bg-neutral: #F8FAFC;
+            --text-main: #1E293B;
+            --text-light: #64748B;
+            --card-bg: #FFFFFF;
+            --card-border: #E2E8F0;
+            --chip-bg: #E0F2FE;
+            --chip-text: #0369A1;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; background: var(--bg-neutral); color: var(--text-main);
+            font-family: "Inter", system-ui, sans-serif; line-height: 1.5;
+        }
+        header {
+            background: radial-gradient(circle at 50% 50%, #272822 0%, #111111 100%);
+            color: white; padding: 56px 16px 48px; text-align: center;
+        }
+        header h1 {
+            font-family: "Poppins", sans-serif; font-size: clamp(28px, 5vw, 44px);
+            margin: 0; line-height: 1.1;
+        }
+        header h1 span {
+            display: block; color: var(--utn-gold); font-weight: 400;
+            font-size: 0.7em; margin-top: 8px;
+        }
+        header p {
+            margin: 18px 0 0; color: rgba(255, 255, 255, 0.45);
+            font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
+        }
+        main { max-width: 960px; margin: 0 auto; padding: 40px 16px 56px; }
+        h2 {
+            font-family: "Poppins", sans-serif; color: var(--utn-blue);
+            font-size: 22px; margin: 0 0 20px; padding-left: 12px;
+            border-left: 8px solid var(--utn-gold);
+        }
+        .clases {
+            display: grid; gap: 18px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+        .clase {
+            display: block; text-decoration: none; color: inherit;
+            background: var(--card-bg); border: 1px solid var(--card-border);
+            border-left: 8px solid var(--utn-gold); border-radius: 14px;
+            padding: 20px 22px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .clase:hover, .clase:focus-visible {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(0, 43, 91, 0.12);
+        }
+        .clase h3 {
+            font-family: "Poppins", sans-serif; color: var(--utn-blue);
+            font-size: 19px; margin: 0 0 8px;
+        }
+        .clase p { margin: 0 0 14px; color: var(--text-light); font-size: 15px; }
+        .chip {
+            display: inline-block; font-size: 12px; font-weight: 600;
+            padding: 3px 10px; border-radius: 10px; margin: 0 6px 6px 0;
+            background: var(--chip-bg); color: var(--chip-text);
+            letter-spacing: 0.5px;
+        }
+        footer {
+            text-align: center; font-size: 13px; color: var(--text-light);
+            padding: 0 16px 32px; letter-spacing: 1px;
+        }
+        footer span { color: #B8860B; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Algoritmos y Estructuras de Datos<span>Curso Inicial</span></h1>
+        <p>UTN - Facultad Regional Santa Fe (ISI)</p>
+    </header>
+
+    <main>
+        <h2>Clases prácticas</h2>
+        <div class="clases">
+            <!-- Para sumar una clase, copiar este bloque y cambiar la carpeta -->
+            <a class="clase" href="strings-condicionales-repetitivas/">
+                <h3>Strings, Condicionales y Repetitivas</h3>
+                <p>Ejercicios de las tres guías resueltos en C++, con un integrador que combina los tres temas.</p>
+                <span class="chip">STRING</span>
+                <span class="chip">CONDICIONALES</span>
+                <span class="chip">REPETITIVAS</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>AEDD / UTN <span>SANTA FE</span></footer>
+</body>
+</html>
